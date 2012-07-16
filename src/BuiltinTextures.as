@@ -105,6 +105,10 @@ package
         public var EnvNegZ:Class;
 		public var envNegZ : Bitmap = new EnvNegZ();
 				
+		[Embed(source="../embeds/reflection.jpg")]
+		private static var BuildingReflection:Class;							
+		public var buildingReflection : Bitmap = new BuildingReflection();
+		
 		private var _lookup:Dictionary = new Dictionary();
 		private var _cubeLookup:Dictionary = new Dictionary();
 		private var _materialLookup:Dictionary = new Dictionary();
@@ -128,7 +132,8 @@ package
 			_lookup["Landmark_london"] = createTexture(landmarkLondon.bitmapData);
 			_lookup["LandmarkRoofSpecular"] = createTexture(landmarkRoofSpecular.bitmapData);
 			_lookup["Landmark_specular_sanfrancisco"] = createTexture(landmarkSpecularSF.bitmapData);
-			_lookup["Landmark_specular_london"] = createTexture(landmarkSpecularLondon.bitmapData);
+			_lookup["Landmark_specular_london"] = createTexture(landmarkSpecularLondon.bitmapData);			
+			_lookup["BuildingReflection"] = createTexture(buildingReflection.bitmapData);
 			
 			_lookup["EnvPosX"] = createTexture(envPosX.bitmapData);
 			_lookup["EnvPosY"] = createTexture(envPosY.bitmapData);
