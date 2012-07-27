@@ -10,8 +10,8 @@ package
 	
 	public class HarnessApplication extends Application
 	{		
-		private const ENTRY_POINT_APP_NAME:String = ; //"APP_NAME";
-		private const ENTRY_POINT_APP_CLASS:Class = ; //APP_NAMEAppEntryPoint;
+		private const ENTRY_POINT_APP_NAME:String = "OrbitApp";
+		private const ENTRY_POINT_APP_CLASS:Class = OrbitAppEntryPoint;
 		
 		protected var _context:MolehillAppContext;
 		protected var _appStoreContentFetcher:HarnessAppStoreContentFetcher;
@@ -19,7 +19,14 @@ package
 		
 		public function start():void
 		{
-			_context = new MolehillAppContext(this, new ApplicationParameters(parameters), new BuiltinTextures(), new BuiltinFonts(), onPlatformSpinUpComplete);
+			_context = new MolehillAppContext(
+          this, 
+          new ApplicationParameters(parameters), 
+          new BuiltinTextures(), 
+          new BuiltinFonts(), 
+          new BuiltinMeshes(),
+          onPlatformSpinUpComplete
+      );
 		}
 		
 		private function onPlatformSpinUpComplete():void
