@@ -65,27 +65,27 @@ package
 		private static var RoadNameTexture:Class;
 		public var roadNameTexture:Bitmap = new RoadNameTexture();
 		
-		[Embed(source="../embeds/envMap/skyboxVectorSky_LF.jpg")]
+		[Embed(source="../embeds/envMap/skyboxVectorSky_LF.png")]
 		public var EnvPosX:Class;
 		public var envPosX:Bitmap = new EnvPosX();
 		
-		[Embed(source="../embeds/envMap/skyboxVectorSky_UP.jpg")]
+		[Embed(source="../embeds/envMap/skyboxVectorSky_UP.png")]
 		public var EnvPosY:Class;
 		public var envPosY:Bitmap = new EnvPosY();
 		
-		[Embed(source="../embeds/envMap/skyboxVectorSky_FR.jpg")]
+		[Embed(source="../embeds/envMap/skyboxVectorSky_FR.png")]
 		public var EnvPosZ:Class;
 		public var envPosZ:Bitmap = new EnvPosZ();
 		
-		[Embed(source="../embeds/envMap/skyboxVectorSky_RT.jpg")]
+		[Embed(source="../embeds/envMap/skyboxVectorSky_RT.png")]
 		public var EnvNegX:Class;
 		public var envNegX:Bitmap = new EnvNegX();
 		
-		[Embed(source="../embeds/envMap/skyboxVectorSky_DN.jpg")]
+		[Embed(source="../embeds/envMap/skyboxVectorSky_DN.png")]
 		public var EnvNegY:Class;
 		public var envNegY:Bitmap = new EnvNegY();
 		
-		[Embed(source="../embeds/envMap/skyboxVectorSky_BK.jpg")]
+		[Embed(source="../embeds/envMap/skyboxVectorSky_BK.png")]
 		public var EnvNegZ:Class;
 		public var envNegZ:Bitmap = new EnvNegZ();
 		
