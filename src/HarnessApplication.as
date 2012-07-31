@@ -10,8 +10,8 @@ package
 	
 	public class HarnessApplication extends Application
 	{
-		private const ENTRY_POINT_APP_NAME:String = //"APP_NAME";
-		private const ENTRY_POINT_APP_CLASS:Class = //APP_NAMEAppEntryPoint;
+		private const ENTRY_POINT_APP_NAME:String = null;
+		private const ENTRY_POINT_APP_CLASS:Class = Object;
 		
 		protected var _context:MolehillAppContext;
 		protected var _appStoreContentFetcher:HarnessAppStoreContentFetcher;
@@ -31,6 +31,11 @@ package
 		
 		private function onPlatformSpinUpComplete():void
 		{
+			if (ENTRY_POINT_APP_NAME == null || ENTRY_POINT_APP_CLASS == Object)
+			{
+				throw new Error("You have not specified your app entry point name and class!");
+			}
+			
 			var app : AppStoreItemModel = new AppStoreItemModel();
 			app.appName = ENTRY_POINT_APP_NAME;
 			app.displayName = ENTRY_POINT_APP_NAME;
