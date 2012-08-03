@@ -61,31 +61,31 @@ package
 		private static var RoadsDiffuse:Class;
 		public var roadsDiffuse:Bitmap = new RoadsDiffuse();
 		
-		[Embed(source="../embeds/fonts/roadNamesFont_0.png")]
+		[Embed(source="../embeds/fonts/roadNamesFont0.png")]
 		private static var RoadNameTexture:Class;
 		public var roadNameTexture:Bitmap = new RoadNameTexture();
 		
-		[Embed(source="../embeds/envMap/skyboxVectorSky_LF.png")]
+		[Embed(source="../embeds/envMap/skyboxVectorSkyLf.jpg")]
 		public var EnvPosX:Class;
 		public var envPosX:Bitmap = new EnvPosX();
 		
-		[Embed(source="../embeds/envMap/skyboxVectorSky_UP.png")]
+		[Embed(source="../embeds/envMap/skyboxVectorSkyUp.jpg")]
 		public var EnvPosY:Class;
 		public var envPosY:Bitmap = new EnvPosY();
 		
-		[Embed(source="../embeds/envMap/skyboxVectorSky_FR.png")]
+		[Embed(source="../embeds/envMap/skyboxVectorSkyFr.jpg")]
 		public var EnvPosZ:Class;
 		public var envPosZ:Bitmap = new EnvPosZ();
 		
-		[Embed(source="../embeds/envMap/skyboxVectorSky_RT.png")]
+		[Embed(source="../embeds/envMap/skyboxVectorSkyRt.jpg")]
 		public var EnvNegX:Class;
 		public var envNegX:Bitmap = new EnvNegX();
 		
-		[Embed(source="../embeds/envMap/skyboxVectorSky_DN.png")]
+		[Embed(source="../embeds/envMap/skyboxVectorSkyDn.jpg")]
 		public var EnvNegY:Class;
 		public var envNegY:Bitmap = new EnvNegY();
 		
-		[Embed(source="../embeds/envMap/skyboxVectorSky_BK.png")]
+		[Embed(source="../embeds/envMap/skyboxVectorSkyBk.jpg")]
 		public var EnvNegZ:Class;
 		public var envNegZ:Bitmap = new EnvNegZ();
 		
@@ -106,11 +106,11 @@ package
 			_lookup["LandmarkDiffuse"] = createTexture(landmarkDiffuse.bitmapData);
 			_lookup["LandmarkSpecular"] = createTexture(landmarkSpecular.bitmapData);
 			
-			_lookup["BuildingColours"] = createTexture(buildingColors.bitmapData);
 			_lookup["BuildingReflection"] = createTexture(buildingReflection.bitmapData);
 			_lookup["BuildingRoofColours"] = createTexture(roofColours.bitmapData);
 			_lookup["BuildingRoofDiffuse"] = createTexture(roof.bitmapData);
 			_lookup["BuildingRoofSpecular"] = createTexture(roofSpecular.bitmapData);
+			_lookup["BuildingWallColours"] = createTexture(buildingColors.bitmapData);
 			_lookup["BuildingWallDiffuse"] = createTexture(wallTextureAtlas.bitmapData);
 			_lookup["BuildingWallSpecular"] = createTexture(wallSpecularAtlas.bitmapData);
 			
