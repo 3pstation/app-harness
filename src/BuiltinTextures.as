@@ -25,7 +25,7 @@ package
 		private static var WallSpecularAtlas:Class;
 		public var wallSpecularAtlas:Bitmap = new WallSpecularAtlas();
 		
-		[Embed(source="../embeds/buildingColours.png")]
+		[Embed(source="../embeds/wallColours.png")]
 		private static var BuildingColors:Class;
 		public var buildingColors:Bitmap = new BuildingColors();
 		
