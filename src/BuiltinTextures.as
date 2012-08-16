@@ -25,14 +25,6 @@ package
 		private static var WallSpecularAtlas:Class;
 		public var wallSpecularAtlas:Bitmap = new WallSpecularAtlas();
 		
-		[Embed(source="../embeds/wallColours.png")]
-		private static var BuildingColors:Class;
-		public var buildingColors:Bitmap = new BuildingColors();
-		
-		[Embed(source="../embeds/roofColours.png")]
-		private static var RoofColours:Class;
-		public var roofColours:Bitmap = new RoofColours();
-		
 		[Embed(source="../embeds/roofDiffuse.png")]
 		private static var Roof:Class;
 		public var roof:Bitmap = new Roof();
@@ -107,10 +99,8 @@ package
 			_lookup["LandmarkSpecular"] = createTexture(landmarkSpecular.bitmapData);
 			
 			_lookup["BuildingReflection"] = createTexture(buildingReflection.bitmapData);
-			_lookup["BuildingRoofColours"] = createTexture(roofColours.bitmapData);
 			_lookup["BuildingRoofDiffuse"] = createTexture(roof.bitmapData);
 			_lookup["BuildingRoofSpecular"] = createTexture(roofSpecular.bitmapData);
-			_lookup["BuildingWallColours"] = createTexture(buildingColors.bitmapData);
 			_lookup["BuildingWallDiffuse"] = createTexture(wallTextureAtlas.bitmapData);
 			_lookup["BuildingWallSpecular"] = createTexture(wallSpecularAtlas.bitmapData);
 			
