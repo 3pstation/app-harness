@@ -8,7 +8,7 @@ package
 	import materials.ITextureLookup;
 	
 	public class BuiltinTextures implements ITextureLookup
-	{
+	{		
 		[Embed(source="../embeds/landmarkDiffuse.png")]
 		private static var LandmarkDiffuse:Class;
 		public var landmarkDiffuse:Bitmap = new LandmarkDiffuse();
@@ -17,7 +17,7 @@ package
 		private static var LandmarkSpecular:Class;
 		public var landmarkSpecular:Bitmap = new LandmarkSpecular();
 		
-		[Embed(source="../embeds/wallDiffuse.png")]
+		[Embed(source="../embeds/wallDiffuse.jpg")]
 		private static var WallTextureAtlas:Class;
 		public var wallTextureAtlas:Bitmap = new WallTextureAtlas();
 		
@@ -25,7 +25,7 @@ package
 		private static var WallSpecularAtlas:Class;
 		public var wallSpecularAtlas:Bitmap = new WallSpecularAtlas();
 		
-		[Embed(source="../embeds/roofDiffuse.png")]
+		[Embed(source="../embeds/roofDiffuse.jpg")]
 		private static var Roof:Class;
 		public var roof:Bitmap = new Roof();
 		
@@ -33,7 +33,7 @@ package
 		private static var RoofSpecular:Class;
 		public var roofSpecular:Bitmap = new RoofSpecular();
 		
-		[Embed(source="../embeds/groundDiffuse.png")]
+		[Embed(source="../embeds/groundDiffuse.jpg")]
 		private static var TerrainDiffuse:Class;
 		public var terrainDiffuse:Bitmap = new TerrainDiffuse();
 		
@@ -52,6 +52,10 @@ package
 		[Embed(source="../embeds/roadDiffuse.png")]
 		private static var RoadsDiffuse:Class;
 		public var roadsDiffuse:Bitmap = new RoadsDiffuse();
+		
+		[Embed(source="../embeds/railDiffuse.png")]
+		private static var RailDiffuse:Class;
+		public var railDiffuse:Bitmap = new RailDiffuse();
 		
 		[Embed(source="../embeds/fonts/roadNamesFont0.png")]
 		private static var RoadNameTexture:Class;
@@ -112,6 +116,8 @@ package
 			
 			_lookup["RoadsDiffuse"] = createTexture(roadsDiffuse.bitmapData);
 			_lookup["RoadNameTexture"] = createTexture(roadNameTexture.bitmapData);
+			
+			_lookup["RailDiffuse"] = createTexture(railDiffuse.bitmapData);
 			
 			_lookup["TreeDiffuse"] = createTexture(treeDiffuse.bitmapData);
 			
