@@ -53,6 +53,46 @@ package
 		private static var RoadsDiffuse:Class;
 		public var roadsDiffuse:Bitmap = new RoadsDiffuse();
 		
+				[Embed(source="../embeds/LcmTerrainTextures/Texture01.png")]
+		private static var Grass01:Class;
+		public var grass01:Bitmap = new Grass01();
+		
+		[Embed(source="../embeds/LcmTerrainTextures/Texture02.png")]
+		private static var Grass02:Class;
+		public var grass02:Bitmap = new Grass02();
+		
+		[Embed(source="../embeds/LcmTerrainTextures/Texture03.png")]
+		private static var Grass03:Class;
+		public var grass03:Bitmap = new Grass03();
+		
+		[Embed(source="../embeds/LcmTerrainTextures/Texture04.png")]
+		private static var Concrete01:Class;
+		public var concrete01:Bitmap = new Concrete01();
+		
+		[Embed(source="../embeds/LcmTerrainTextures/Texture05.png")]
+		private static var Concrete02:Class;
+		public var concrete02:Bitmap = new Concrete02();
+		
+		[Embed(source="../embeds/LcmTerrainTextures/Texture06.png")]
+		private static var Concrete03:Class;
+		public var concrete03:Bitmap = new Concrete03();
+		
+		[Embed(source="../embeds/LcmTerrainTextures/Texture07.png")]
+		private static var Concrete04:Class;
+		public var concrete04:Bitmap = new Concrete04();
+		
+		[Embed(source="../embeds/LcmTerrainTextures/Texture08.png")]
+		private static var Concrete05:Class;
+		public var concrete05:Bitmap = new Concrete05();
+		
+		[Embed(source="../embeds/LcmTerrainTextures/Texture09.png")]
+		private static var Concrete06:Class;
+		public var concrete06:Bitmap = new Concrete06();
+		
+		[Embed(source="../embeds/LcmTerrainTextures/Texture10.png")]
+		private static var Texture10:Class;
+		public var texture10:Bitmap = new Texture10();
+		
 		[Embed(source="../embeds/railDiffuse.png")]
 		private static var RailDiffuse:Class;
 		public var railDiffuse:Bitmap = new RailDiffuse();
@@ -109,6 +149,18 @@ package
 			_lookup["BuildingWallSpecular"] = createTexture(wallSpecularAtlas.bitmapData);
 			
 			_lookup["TerrainDiffuse"] = createTexture(terrainDiffuse.bitmapData);
+			
+			_lookup["LCMTexture01"] = createTexture(grass01.bitmapData);
+			_lookup["LCMTexture02"] = createTexture(grass02.bitmapData);
+			_lookup["LCMTexture03"] = createTexture(grass03.bitmapData);
+			
+			_lookup["LCMTexture04"] = createTexture(concrete01.bitmapData);
+			_lookup["LCMTexture05"] = createTexture(concrete02.bitmapData);
+			_lookup["LCMTexture06"] = createTexture(concrete03.bitmapData);
+			_lookup["LCMTexture07"] = createTexture(concrete04.bitmapData);
+			_lookup["LCMTexture08"] = createTexture(concrete05.bitmapData);
+			_lookup["LCMTexture09"] = createTexture(concrete06.bitmapData);
+			_lookup["LCMTexture10"] = createTexture(texture10.bitmapData);
 			
 			_lookup["WaveColor"] = createTexture(waveColor.bitmapData);
 			_lookup["WaveNormalMap"] = createTexture(waveNormalMap.bitmapData);
