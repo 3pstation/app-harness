@@ -89,7 +89,15 @@ package
 		[Embed(source="../embeds/LcmTerrainTextures/Texture13.png")]
 		private static var LcmTexture13:Class
 		public var lcmTexture13:Bitmap = new LcmTexture13();
+		
+		[Embed(source="../embeds/LcmTerrainTextures/Texture14.png")]
+		private static var LcmTexture14:Class
+		public var lcmTexture14:Bitmap = new LcmTexture14();		
 
+		[Embed(source="../embeds/LcmTerrainTextures/Texture15.png")]
+		private static var LcmTexture15:Class
+		public var lcmTexture15:Bitmap = new LcmTexture15();	
+		
 		// water
 		[Embed(source="../embeds/LcmTerrainTextures/WaterGradient.png")] 
 		private static var WaterGradient:Class;
@@ -175,6 +183,8 @@ package
 			_lookup["LcmTexture11"] = createTexture(lcmTexture11.bitmapData);
 			_lookup["LcmTexture12"] = createTexture(lcmTexture12.bitmapData);
 			_lookup["LcmTexture13"] = createTexture(lcmTexture13.bitmapData);			
+			_lookup["LcmTexture14"] = createTexture(lcmTexture14.bitmapData);	
+			_lookup["LcmTexture15"] = createTexture(lcmTexture15.bitmapData);	
 						
 			_lookup["WaterBump"] = createTexture(waterBump.bitmapData);
 			_lookup["WaterGradient"] = createTexture(waterGradient.bitmapData);
